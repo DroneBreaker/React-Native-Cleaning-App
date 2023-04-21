@@ -20,7 +20,7 @@ export default function Home() {
 
           <Heading fontSize={18}>Service Category</Heading>
 
-          <Link isUnderlined>See more</Link>
+          <Link _text={{color: "orange.300"}} isUnderlined>See more</Link>
         </HStack>
 
         <ScrollView h={120} w={80} horizontal>

@@ -5,7 +5,8 @@ import Home from '../pages/Home';
 import Profile from '../pages/Profile';
 import Message from '../pages/Message';
 import Orders from '../pages/Orders'
-import { Box, Icon, Image } from 'native-base';
+import { Box, Icon } from 'native-base';
+import { MaterialIcons, AntDesign, Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
@@ -34,8 +35,9 @@ export default function Tabs() {
         <Tab.Screen name="Home" component={Home} options={{tabBarIcon: ({focused}) => (
           <Box>
             {/* <Image source={}/> */}
-            {/* <Icon /> */}
-            <Text>Home</Text>
+            <Icon as={Ionicons} size={19} color={"black"} name="home" />
+            
+            {/* <Text>Home</Text> */}
           </Box>
         )}}/>
 
@@ -43,8 +45,9 @@ export default function Tabs() {
         <Tab.Screen name="Orders" component={Orders} options={{tabBarIcon: ({focused}) => (
           <Box>
             {/* <Image source={}/> */}
-            {/* <Icon /> */}
-            <Text>Orders</Text>
+            <Icon as={MaterialIcons} size={19} color={"black"} name="book" />
+
+            {/* <Text>Orders</Text> */}
           </Box>
         )}}/>
 
@@ -52,8 +55,9 @@ export default function Tabs() {
         <Tab.Screen name="Message" component={Message} options={{tabBarIcon: ({focused}) => (
           <Box>
             {/* <Image source={}/> */}
-            {/* <Icon /> */}
-            <Text>Messages</Text>
+            <Icon as={MaterialIcons} size={19} color={"black"} name="message" />
+
+            {/* <Text>Messages</Text> */}
           </Box>
         )}}/>
 
@@ -61,8 +65,9 @@ export default function Tabs() {
         <Tab.Screen name="Profile" component={Profile} options={{tabBarIcon: ({focused}) => (
           <Box>
             {/* <Image source={}/> */}
-            {/* <Icon /> */}
-            <Text>Profile</Text>
+            <Icon as={AntDesign} size={19} color={"black"} name="profile" />
+
+            {/* <Text>Profile</Text> */}
           </Box>
         )}}/>
     </Tab.Navigator>
